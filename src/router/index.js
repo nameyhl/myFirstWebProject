@@ -24,7 +24,6 @@ const router = createRouter({
       path: '/reception',
       name: 'receptionHome',
       component: () => import('@/views/reception/home.vue'),
-      children: [],
     },
     {
       path: '/login',

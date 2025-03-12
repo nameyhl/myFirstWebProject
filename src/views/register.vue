@@ -8,7 +8,10 @@
                     <el-input v-model="userInfo.userName"></el-input>
                 </el-form-item>
                 <el-form-item label="密码：" prop="password">
-                    <el-input v-model="userInfo.password"></el-input>
+                    <el-input v-model="userInfo.password" show-password></el-input>
+                </el-form-item>
+                <el-form-item label="确认密码" prop="surePassword">
+                    <el-input v-model="userInfo.surePassword" show-password></el-input>
                 </el-form-item>
                 <el-form-item label="邮箱：" prop="email">
                     <el-input v-model="userInfo.email"></el-input>
@@ -57,9 +60,18 @@ const validatePhone = (rule, value, callback) => {
         callback();
     }
 };
+// 判断请按两次输入的密码是否一致
+const validateSuerPassword = (rule, value, callback) => {
+    if (value !== userInfo.value.password) {
+        callback(new Error('两次输入密码不一致'));
+    } else {
+        callback();
+    }
+}
 let userInfo = ref({
     userName: '',
     password: '',
+    surePassword: '',
     email: '',
     phone: '',
     address: '',
@@ -71,6 +83,10 @@ const rules = {
     password: [
         { required: true, message: '请输入密码', trigger: 'blur' },
         { min: 8, max: 15, message: '密码长度只能在8-15个字符', trigger: 'blur' },
+    ],
+    surePassword: [
+        { required: true, message: '请确认密码', trigger: 'blur' },
+        { validator: validateSuerPassword, trigger: 'blur' }
     ],
     email: [
         { required: true, message: '请输入邮箱', trigger: 'blur' },
@@ -121,9 +137,8 @@ const goLogin = () => {
         }
     }
 
-    ::v-deep .el-form-item__label {
+    :deep(.el-form-item__label) {
         color: #000;
-        /* 将颜色改为蓝色 */
     }
 }
 </style>

@@ -108,6 +108,10 @@ startCarousel()
         line-height: 90px;
         text-align: center;
         font-size: 50px;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     .stripBox {
@@ -123,6 +127,10 @@ startCarousel()
             height: 5px;
             background-color: rgba($color: #f0f0f0, $alpha: 0.5);
             margin-right: 10px;
+
+            &:hover {
+                cursor: pointer;
+            }
         }
 
         .chackStrip {

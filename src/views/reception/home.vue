@@ -1,7 +1,7 @@
 <template>
     <div class="body">
         <div class="title">
-            <Menu :memuList="memuList"></Menu>
+            <Menu :brand="brand" :memuList="memuList"></Menu>
         </div>
         <div class="carousel">
             <Carousel :carouselList="carouselList"></Carousel>
@@ -12,6 +12,13 @@
 import Menu from '@/components/menu/index.vue'
 import Carousel from '@/components/carousel/index.vue'
 import { ref } from 'vue';
+
+
+import brandLogo from '@/assets/carsousel/brandLogo.jpg';
+let brand = ref({
+    logo: brandLogo,
+    name: '小米'
+})
 
 let memuList = ref([
     { name: '小米官网', path: '/' },

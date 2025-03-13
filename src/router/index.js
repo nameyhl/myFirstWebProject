@@ -4,6 +4,10 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
+      path: '/',
+      redirect: '/reception',
+    },
+    {
       path: '/manage',
       name: 'manageHome',
       component: () => import('@/views/manage/home.vue'),

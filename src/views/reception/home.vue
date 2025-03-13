@@ -19,12 +19,16 @@ let memuList = ref([
     { name: '小米澎湃OS', path: '/hyperos' },
     { name: '小米汽车', path: '/car' },
 ])
-let carouselList = ref([
-    { src: '@/assets/carsousel/carousel1.jpg', alt: 'carousel1' },
-    { src: '@/assets/carsousel/carousel2.jpg', alt: 'carousel2' },
-    { src: '@/assets/carsousel/carousel3.jpg', alt: 'carousel3' },
-])
+// 直接导入图片
+import carousel1 from '@/assets/carsousel/carousel1.jpg';
+import carousel2 from '@/assets/carsousel/carousel2.jpg';
+import carousel3 from '@/assets/carsousel/carousel3.jpg';
 
+let carouselList = ref([
+    { src: carousel1, alt: 'carousel1' },
+    { src: carousel2, alt: 'carousel2' },
+    { src: carousel3, alt: 'carousel3' },
+]);
 </script>
 <style lang="sass" scoped>
 

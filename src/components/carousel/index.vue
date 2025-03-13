@@ -55,8 +55,13 @@ const pauseCarousel = () => {
 };
 
 const changeCarousel = (direction) => {
-    pauseCarousel()
+    if (interval.value) {
+        pauseCarousel()
+    }
     if (direction === 'left') {
+        if (num === 0) {
+            num = props.carouselList.length - 1
+        }
         num = --num % props.carouselList.length
     } else {
         num = ++num % props.carouselList.length
@@ -69,7 +74,10 @@ const changeCarousel = (direction) => {
 
 const chackStrip = (item) => {
     num = item - 1
-    pauseCarousel()
+    if (interval.value) {
+        pauseCarousel()
+    }
+
     img.value = props.carouselList[num]
     setTimeout(() => {
         startCarousel()

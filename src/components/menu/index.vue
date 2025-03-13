@@ -55,6 +55,7 @@ let props = defineProps({
         font-weight: 900;
         height: 50px;
         line-height: 50px;
+        color: #ff6b01
     }
 }
 </style>

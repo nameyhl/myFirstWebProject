@@ -39,6 +39,7 @@ const chosePage = (index) => {
     line-height: 50px;
     text-align: center;
     background-color: #409eff;
+    color: #fff;
     border-radius: 10px;
     margin: 10px 0;
 

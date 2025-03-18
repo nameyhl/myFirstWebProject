@@ -1,7 +1,10 @@
 <template>
-  <div class="body">
+  <div class="detaileBody">
     <div class="carousel">
       <Carousel :carouselList="carouselList"></Carousel>
+    </div>
+    <div class="countDown">
+      <CountDown></CountDown>
     </div>
     <div class="telescopic">
       <Telescopic :imgs="imgs"></Telescopic>
@@ -9,6 +12,7 @@
     <div class="tabPage">
       <TabPage :tabPages="tabPages"></TabPage>
     </div>
+
   </div>
 </template>
 
@@ -16,6 +20,7 @@
 import Carousel from '@/components/carousel/index.vue'
 import Telescopic from '@/components/telescopic/index.vue'
 import TabPage from '@/components/tabsPage/index.vue'
+import CountDown from '@/components/countDown/index.vue'
 import { ref } from 'vue';
 
 // 直接导入图片
@@ -45,4 +50,8 @@ let tabPages = ref([
 ])
 </script>
 
-<style lang="less" scoped></style>
+<style lang="scss" scoped>
+.detaileBody {
+  margin-bottom: 50px;
+}
+</style>

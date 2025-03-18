@@ -42,7 +42,6 @@ let props = defineProps({
       &:hover {
         cursor: pointer;
         color: #409eff;
-        // font-size: 20px;
         font-weight: 600;
       }
     }

@@ -6,15 +6,17 @@
     <div class="telescopic">
       <Telescopic :imgs="imgs"></Telescopic>
     </div>
+    <div class="tabPage">
+      <TabPage :tabPages="tabPages"></TabPage>
+    </div>
   </div>
 </template>
 
 <script setup>
 import Carousel from '@/components/carousel/index.vue'
 import Telescopic from '@/components/telescopic/index.vue'
+import TabPage from '@/components/tabsPage/index.vue'
 import { ref } from 'vue';
-
-
 
 // 直接导入图片
 import carousel1 from '@/assets/carsousel/carousel1.jpg';
@@ -34,6 +36,12 @@ let imgs = ref([
   { src: img1, alt: 'img1' },
   { src: img2, alt: 'img2' },
   { src: img3, alt: 'img3' },
+])
+
+let tabPages = ref([
+  { name: 'tab1', text: 'tab1' },
+  { name: 'tab2', text: 'tab2' },
+  { name: 'tab3', text: 'tab3' },
 ])
 </script>
 

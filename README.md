@@ -8,33 +8,33 @@
 
 一个横向目录，需要传递的数据是menu项，和一个logo标志
 
-![image-20250331113002476](C:\Users\yyy\AppData\Roaming\Typora\typora-user-images\image-20250331113002476.png)
+![image-20250331113002476](https://github.com/nameyhl/READMEPng/blob/master/image-20250331113002476.png)
 
 ## 组件2、Carousel
 
 一个轮播图组件，需要传递的数据是一个图片数组
 
-![image-20250331113027530](C:\Users\yyy\AppData\Roaming\Typora\typora-user-images\image-20250331113027530.png)
+![image-20250331113027530](https://github.com/nameyhl/READMEPng/blob/master/image-20250331113027530.png)
 
 ## 组件3、chackList
 
 一个选中列表，多选的，可多组分类，类似树状选择器
 
-![image-20250331113049604](C:\Users\yyy\AppData\Roaming\Typora\typora-user-images\image-20250331113049604.png)
+![image-20250331113049604](https://github.com/nameyhl/READMEPng/blob/master/image-20250331113049604.png)
 
-![image-20250331113101837](C:\Users\yyy\AppData\Roaming\Typora\typora-user-images\image-20250331113101837.png)
+![image-20250331113101837](https://github.com/nameyhl/READMEPng/blob/master/image-20250331113101837.png)
 
 ## 组件4、countDown
 
 一个倒计时组件
 
-![image-20250331113120999](C:\Users\yyy\AppData\Roaming\Typora\typora-user-images\image-20250331113120999.png)
+![image-20250331113120999](https://github.com/nameyhl/READMEPng/blob/master/image-20250331113120999.png)
 
 ## 组件5、tabsPage
 
 一个类似菜单组件，可以选中一个然后下部分页面显示对应内容，这个没什么复用的必要
 
-![image-20250331113238668](C:\Users\yyy\AppData\Roaming\Typora\typora-user-images\image-20250331113238668.png)
+![image-20250331113238668](https://github.com/nameyhl/READMEPng/blob/master/image-20250331113138637.png)
 
 ## 组件6、telescopic
 

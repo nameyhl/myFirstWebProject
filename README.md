@@ -34,22 +34,18 @@
 
 一个类似菜单组件，可以选中一个然后下部分页面显示对应内容，这个没什么复用的必要
 
-![image-20250331113238668](https://github.com/nameyhl/READMEPng/blob/master/image-20250331113138637.png)
+![image-20250331113238668](https://github.com/nameyhl/READMEPng/blob/master/image-20250331113238668.png)
 
 ## 组件6、telescopic
 
 这个类似轮播图，但是是伸缩类型的，当鼠标移动上一个图片时，这个图片变大，其它图片收缩
 
-![image-20250331113138637](C:\Users\yyy\AppData\Roaming\Typora\typora-user-images\image-20250331113138637.png)
+![image-20250331113138637](https://github.com/nameyhl/READMEPng/blob/master/image-20250331113146495.png)
 
-![image-20250331113146495](C:\Users\yyy\AppData\Roaming\Typora\typora-user-images\image-20250331113146495.png)
+![image-20250331113146495](https://github.com/nameyhl/READMEPng/blob/master/image-20250331113138637.png)
 
 # 自定义指令
 
 ## 指令1、v-hover
 
 当鼠标悬停在一个元素上是，元素变成原来大小的1.2倍
-
-![image-20250331113212128](C:\Users\yyy\AppData\Roaming\Typora\typora-user-images\image-20250331113212128.png)
-
-![image-20250331113223985](C:\Users\yyy\AppData\Roaming\Typora\typora-user-images\image-20250331113223985.png)

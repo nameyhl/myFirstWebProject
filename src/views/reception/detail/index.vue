@@ -12,7 +12,9 @@
     <div class="tabPage">
       <TabPage :tabPages="tabPages"></TabPage>
     </div>
-
+    <div class="chackBox">
+      <ChackList></ChackList>
+    </div>
   </div>
 </template>
 
@@ -21,6 +23,7 @@ import Carousel from '@/components/carousel/index.vue'
 import Telescopic from '@/components/telescopic/index.vue'
 import TabPage from '@/components/tabsPage/index.vue'
 import CountDown from '@/components/countDown/index.vue'
+import ChackList from '@/components/chackList/index.vue';
 import { ref } from 'vue';
 
 // 直接导入图片
@@ -53,5 +56,8 @@ let tabPages = ref([
 <style lang="scss" scoped>
 .detaileBody {
   margin-bottom: 50px;
+}
+.chackBox{
+  margin-top: 20px;
 }
 </style>

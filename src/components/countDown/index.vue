@@ -19,7 +19,7 @@ let day = ref('00')
 let hour = ref("00")
 let minute = ref("00")
 
-let targetTime = new Date(`2025-3-21 18:00:00`)
+let targetTime = new Date(`2025-6-5 18:00:00`)
 let targetDate = addZero(targetTime.getTime())
 let targetYear = addZero(targetTime.getFullYear())
 let targetMonth = addZero(targetTime.getMonth() + 1)

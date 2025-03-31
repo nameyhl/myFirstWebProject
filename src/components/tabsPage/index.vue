@@ -1,6 +1,7 @@
 <template>
   <div class="tabs">
-    <div class="tab" v-for="(item, index) in tabPages" :key="item.name" @click="chosePage(index)">{{ item.name }}</div>
+    <div class="tab" v-hover v-for="(item, index) in tabPages" :key="item.name" @click="chosePage(index)">{{ item.name
+      }}</div>
   </div>
   <div class="pages">
     <div class="page" v-for="(item, index) in tabPages" :key="item.name">
